@@ -1,0 +1,906 @@
+/* Style off */
+body{
+	margin: 0;
+
+	background-color: #0ba569;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box; /* -Меняет алгоритм подсчета блоков */
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+p{
+	margin: 0 0 10px 0;
+}
+.header__menu{
+	display: none;
+}
+.instruments__mobile{
+	display: none;
+}
+
+/* Action styles */
+.header.fixed{
+	background-color: #f7b138;
+	position: fixed;
+}
+
+/* Container */
+.container{
+	width: 100%;
+	max-width: 1700px;
+	margin: 0 auto;
+	z-index: 0;
+}
+
+/* Btn */
+.btn{
+	color: #fff;
+	font-size: 13px;
+	padding: 15px 105px;
+	border-radius: 50px;
+
+	transition: background-color 0.2s linear;
+}
+.btn:hover{
+	background-color: #fff;
+}
+.btn--green{
+	background-color: #0ba569;
+}
+.btn--rifle-green{
+	background-color: #168370;
+	border: 1px solid #e0ac3f;
+}
+.btn--white{
+	background-color: #fff;
+	color: #333;
+}
+
+.btn:hover, .btn--green:hover, .btn--rifle-green:hover{
+	color: #333;
+	background-color: #fff;
+}
+.btn--white:hover{
+	background-color: #c5481c;
+	color: #fff;
+}
+/* Arrows */
+
+/* arrow--left */
+.arrow--left {
+	cursor: pointer;
+	position: relative;
+
+	width: 30px;
+	height: 30px;
+	margin-right: 40px;
+}
+.arrow--left div {
+	display: block;
+	left:0;
+	position: relative;
+	top: 50%;
+	width: 30px;
+	height: 2px;
+
+	background-color: #ffbf41;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+
+}
+.arrow--left div::after {
+	content: '';
+    position: absolute;
+
+    width: 10px;/* регуляторы стрелок */
+    height: 2px; 
+    top: -4px;
+    left: 0px;
+
+    background-color: #ffbf41;
+    transform: rotate(-45deg);
+}
+.arrow--left div::before {
+    content: '';
+    position: absolute;
+
+    width: 10px;/* регуляторы стрелок */
+    height: 2px;
+    top: 4px;
+    left: 0px;
+
+    background-color: #ffbf41;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(45deg);
+}
+
+/* arrow--right */
+.arrow--right {
+	cursor: pointer;
+	position: relative;
+
+	width: 30px;
+	height: 30px;
+	margin-left: 40px;
+}
+.arrow--right div {
+	position: relative;
+	top: 50%;
+	width: 30px;
+	height: 2px;
+	background-color: #ffbf41;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+	left:0;
+	display: block;
+}
+.arrow--right div::after {
+	content: '';
+    position: absolute;
+
+    width: 10px;/* регуляторы стрелок */
+    height: 2px; 
+    top: -4px;
+    right: 0px;
+
+    background-color: #ffbf41;
+    transform: rotate(45deg);
+}
+.arrow--right div::before {
+    content: '';
+    position: absolute;
+
+    width: 10px;/* регуляторы стрелок */
+    height: 2px;
+    top: 4px;
+    right: 0px;
+
+    background-color: #ffbf41;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+/*.arrow--right:hover {
+	animation: arrow--right 1s linear infinite;
+}
+@keyframes arrow--right {
+    0% {
+        left:0;
+	}
+    50% {
+        left:10px;
+	}
+    100% {
+        left:0;
+	}
+}*/
+.arrow--top {
+	cursor: pointer;
+	position: relative;
+
+	width: 30px;
+	height: 30px;
+	margin-left: 40px;
+}
+.arrow--top div {
+	position: relative;
+	top: 50%;
+	width: 2px;
+	height: 20px;
+
+	background-color: #ffbf41;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+	left:0;
+	display: block;
+}
+.arrow--top div::after {
+    content: '';
+    position: absolute;
+
+    width: 10px;
+    height: 2px;
+    top: 2px;
+    right: -1px;
+
+    background-color: #ffbf41;
+    transform: rotate(-45deg)
+}
+.arrow--top div::before {
+    content: '';
+    position: absolute;
+
+    width: 10px;
+    height: 2px;
+    top: 2px;
+    right: -7px;
+
+    background-color: #ffbf41;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(45deg)
+}
+
+/* Indicator for buying */
+.reduce, .increase{
+	cursor: pointer;
+	opacity: 0.8;
+	transition: opacity 0.2s linear;
+}
+.reduce:hover, .increase:hover{
+	opacity: 1;
+}
+.buy-indicator{
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+
+	color: #fff;
+	font-size: 30px;
+	width: 230px;
+	height: 50px;
+	border-radius: 5px;
+	border:1px solid #fff;
+}
+.reduce{
+	padding-left: 10px;
+}
+.increase{
+	padding-right: 10px;
+}
+/* Intro */
+.intro__inner{
+	width: 100%;
+	
+	background-color: #f7b138;
+}
+
+/* Header */
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 65px 90px 0 90px;
+}
+.nav__link{
+	color: #fff;
+	opacity: 0.9;
+	text-transform: uppercase;
+	padding-right: 30px; 
+}
+.nav__link:hover{
+	opacity: 1.0;
+}
+.nav__link:last-child{
+	padding-right: 0px;
+}
+
+	.header__menu{
+		display: none;
+		background-color: transparent;
+		border: none;
+		padding: 9px 2px;
+		cursor: pointer;
+	}
+	.menu__item{
+		width: 30px;
+		height:3px;
+
+		display: block;
+		background-color: #fff;
+	}
+	.menu__item:not(:last-child){
+		margin-bottom: 3px;
+	}
+
+.site__title{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.organic{
+	font-size: 35px;
+	font-weight: 700;
+}
+.instruments{
+	display: flex;
+	align-items: center;
+}
+.instruments__basket{
+	position: relative;
+}
+.basket__count{
+	position: absolute;
+	top: -15px;
+	right: -19px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	
+	text-align: center;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.instruments__wrap{
+	display: flex;
+	align-items: center;
+}
+.instruments__wrap .item{
+	margin-right: 20px;
+}
+.instruments__favicon:not(:last-child){
+	padding-right: 5px;
+}
+.favicon{
+	display: block;
+	height: 18px;
+	width: 18px;
+
+	fill: #fff;
+	transition: fill .2s linear;
+}
+.dash{
+	display: block;
+	height: 2px;
+	width: 30px;
+
+	background-color: #fff;
+	opacity: 0.9;
+}
+.shop__now__btn{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+.smoothies__images{
+	margin-top: 50px;
+}
+.smoothies__img{
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/* 02 About smoothies */
+.smoothies__desc__inner{
+	text-align: center;
+
+	padding: 30px 377px 30px 377px;
+	background-color: #fff;
+}
+.smoothies__desc__img{
+	display: flex;
+	flex-wrap: wrap;
+}
+.--uppers img{
+	width: 25%;
+	border-right: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+.--lowers img{
+	width: 25%;
+	border-right: 1px solid #333;
+}
+.smoothies__desc__img img:last-child{
+	border-right: 0;
+}
+
+.smoothies__title{ 
+	color: #fdae2b;
+	margin-bottom: 20px;
+}
+.smoothies__text{
+	line-height: 1.5;
+	color: #333;
+}
+
+/* Smoothies buy top */
+.smoothies__buy__top{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 90px 0;
+
+	background-color: #14816e;
+}
+.smoothies__buy__img{
+	position: relative;
+	width: 50%;
+}
+.smoothies__buy__img img{
+	width: 100%;
+	max-width: 400px;
+
+	position: absolute;
+	top: -30px;
+	left: 200px;
+	transform: rotate(5deg);
+
+	border: 6px solid #fff;
+}
+.smoothies__buy__desc{
+	width: 50%;
+
+	z-index: 1;
+}
+.smoothies__nav__buy li:not(:last-child){
+	padding-bottom: 10px;
+}
+.awesome{
+	color: #c8e53d;
+}
+.about__organic__btn{
+	display: flex;
+	margin-top: 50px;
+}
+
+
+/* Smoothies buy bottom */
+.smoothies__buy__inner__bottom{
+	display: flex;
+}
+.smoothie__item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+
+	padding-bottom: 50px;
+	padding-top: 115px;
+}
+.item--rifle-red{
+	background-color: #652c19;
+}
+.item--rifle-green{
+	background-color: #198671;
+}
+.item--yellow{
+	background-color: #f7ae3b;
+}
+.item--red{
+	background-color: #c5481c;
+}
+.smoothie__name{
+	margin-top: 30px;
+}
+.smoothie__volume{
+	margin-bottom: 50px;
+}
+.btn-buy{
+	border: 1px solid #fff;
+}
+
+/* Story */
+.story__inner{
+	display: flex;
+	background-color: #fff;
+
+	padding: 100px 0;
+}
+.story__inner img{
+	max-width: 100%;
+}
+.story__wrap{
+	display: flex;
+	flex-direction: column;
+	width: 27%;
+
+	margin: 100px 60px 0px 200px;
+}
+.story__title{
+	margin-bottom: 10px;
+	color: #ffab3c;
+}
+.story__text{
+	margin-bottom: 30px;
+	color: #333;
+	line-height: 1.5;
+}
+/* Testimonials */
+.testimonials__inner{
+	padding: 30px 0;
+	position: relative;
+	background-color: #69301d;
+}
+.testimonials__name{
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	z-index: 1;
+	transform: translateY(-50%);	
+
+	font-size: 700%;/*100px*/
+	font-weight: 700;
+	color: #5b220f;
+}
+.testimonials__title{
+	width: 100%;
+	
+	text-align: center;
+	color: #f9ac38;
+}
+.love{
+	color: #fb602a;
+}
+.testimonials__review{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.testimonials__text{
+	width: 24%;
+	padding-right: 40px;
+	z-index: 2;
+	
+	text-align: center;
+	line-height: 1.8;
+}
+.testimonials__img{
+	z-index: 2;
+}
+
+.testiomials__city{
+	padding-top: 5px;
+	color: #e1a841;
+}
+.arrows{
+	display: flex;
+	justify-content: center;
+}
+
+/* Blog */
+.blog__inner{
+	display: flex;
+	justify-content: center;
+
+	background-color: #fff;
+	color: #333;
+}
+.blog__wrap{
+	width: 58%;
+	padding-top: 50px;
+}
+.blog__title{
+	margin-bottom: 25px;
+
+	color: #fdaa40;
+}
+.blog_desc{
+	display: flex;
+}
+
+.desc{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.desc::before{
+	display: block;
+	content: '';
+	width: 100%;
+	height: 10px;
+	margin-bottom: 25px;
+	
+	background-color: #f5ab3e;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	
+}
+.desc__title{
+	margin-left: 50px;
+	margin-bottom: 10px;
+
+	text-transform: uppercase;
+	color: #ed612c;
+}
+.desc__date{
+	margin-left: 50px;
+}
+.desc__text{
+	margin-top: 25px;
+	margin-left: 75px;
+	line-height: 1.8;
+}
+.read_more{
+	font-weight: 700;
+}
+
+.blog__superfood{
+	display: flex;
+	justify-content: center;
+	margin: 100px 0 50px 0;
+}
+.blog__superfood svg{	
+	fill: #0aa36a;
+}
+.blog__superfood__span{
+	padding-left: 10px;
+	font-weight: 700;
+	color: #0aa36a;
+}
+
+/* Smoothies photos */
+.photos__inner{
+	display: flex;
+
+	padding-bottom: 5px;
+	background-color: #fff;
+}
+.photos__item{
+	position: relative;
+	width: 25%;
+	height: 340px;
+	overflow: hidden;
+}
+.photos__item img{
+	width: 100%;
+	height: 100%;
+}
+.photos__fav{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+/* Footer */
+.footer__inner{
+	display: flex;
+	justify-content: space-between;
+	padding: 70px 90px;
+
+	background-color: #f5ac3b;
+}
+.footer__name{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+
+}
+.footer__information{
+	/*padding: 0 40px;*/
+}
+.information__title{
+	margin-bottom: 20px;
+}
+.information__nav li{
+	padding: 5px 0;
+	
+	list-style: none;
+	color: #703c00;
+}
+.paymnent__title{
+	margin-bottom: 20px;
+}
+.subscribe__title{
+	margin-bottom: 30px;
+}
+.footer__follow{
+	display: flex;
+	justify-content: flex-end;
+
+	margin-top: 30px;
+}
+.follow{
+	margin-bottom: 20px;
+
+	color: #6f3300;
+	text-transform: uppercase;
+}
+.follow__fav{
+	margin-right: 10px;
+}
+.footer__rights{
+	display: flex;
+	justify-content: center;
+	position: relative;
+
+	background-color: #6d2b1b;
+}
+.rights__text{
+	color: #fff;
+	padding: 10px 0;
+	opacity: 0.7;
+}
+.rights__arrow{
+	position: absolute;
+	right: 50px;
+	top: -80%;
+
+	padding: 5px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.go_top{
+	position: absolute;
+	right: 100px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	cursor: pointer;
+}
+
+
+
+
+/* Media */
+@media(max-width: 767px){
+
+	/* Header */
+	.header{
+		padding: 30px 20px 0 20px;
+	}
+	.header__nav{
+		display: none;
+	}
+	.instruments{
+		display: none;
+	}
+
+	.header__menu{
+		display: block;
+	}
+	.instruments__mobile{
+		display: flex;
+	}
+	.instruments__summ{
+		margin: 0 5px;
+	}
+
+	/* About smoothies */
+	.smoothies__desc__inner{
+		padding: 15px;
+	}
+	.smoothies__title{
+		margin-bottom: 5px;
+	}
+	.smoothies__text{
+		line-height: 1.3;
+	}
+
+	/* Shop */
+	.smoothies__buy__top{
+		padding: 30px 0;
+	}
+	.smoothies__buy__img{
+		z-index: 0;
+	}
+	.smoothies__buy__img img{
+		left: 40px;
+		border: 0;
+	}
+	.about__organic__btn{
+		margin-top: 25px;
+	}
+	.about__organic__btn .btn{
+		padding: 15px 10px;
+	}
+	
+	.smoothie__item{
+		padding:30px 0; 
+	}
+	.smoothie__volume{
+		margin-bottom: 20px;
+	}
+	.smoothie__item .btn{
+		padding: 6px 30px;
+	}
+	.smoothie__item__img{
+		display: flex;
+		justify-content: center;
+	}
+	.smoothie__item__img img{
+		width: 70%
+	}
+	/* Our story */
+	.story__inner{
+		flex-direction: column;
+		padding: 20px 40px;
+	}
+	.story__wrap{
+		flex-direction: column;
+		margin: 0;
+		width: 100%;
+
+		margin-bottom: 20px;
+	}
+	.story__btn .btn{
+		padding: 10px 30px;
+	}
+
+	/* Testimonials */
+	.testimonials__review{
+		flex-direction: column;
+	}
+	.testimonials__name{
+		transform: translateY(0);
+		top:15%;
+		left: 5%;
+	}
+	.testimonials__text{
+		padding:0 10px;
+		width: 100%;
+	}
+
+	/* Blog */
+	.blog__inner{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.blog__wrap{
+		width: 100%;
+		padding-top: 0;
+	}
+	.blog__title{
+		margin: 25px 0;
+	}
+	.blog_desc{
+		flex-direction: column;
+	}
+	.desc{
+		margin-top: 10px;
+	}
+	.blog__superfood{
+		margin: 30px 0px;
+	}
+
+	/* Smoothies photos */
+	.photos__item{
+		height: auto;
+	}
+	.photos__fav{
+		top: 10px;
+		right: 10px;
+	}
+
+	/* Footer */
+	.footer__inner{
+		padding: 15px 15px 0 15px;
+		flex-direction: column;
+	}
+	.footer__name{
+		align-items: normal;
+	}
+	.follow{
+		padding-bottom: 0;
+	}
+	.subscribe__title{
+		margin-bottom: 15px;
+	}
+	.subscribe_btn{
+		padding-bottom: 0;
+	}
+	.subscribe_btn .btn{
+		padding: 10px 30px;
+	}
+	.footer__follow{
+		justify-content: center;
+	}
+
+	.go_top{
+		right: 30px;
+	}
+	.top__arrow{
+		right: 40px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

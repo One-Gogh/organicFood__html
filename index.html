@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:400,700|Raleway:400,600,700&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+	<title>OrganicFoods</title>
+</head>
+<body>
+	<div>
+		<svg style="display:none;">
+			<symbol id="search" viewBox="0 0 52.966 52.966">
+				<g>
+					<path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
+					c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
+					C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19
+					S32.459,40,21.983,40z"/>	
+				</g>
+			</symbol>
+		</svg>
+		<svg style="display: none;">
+			<symbol id="basket" viewBox="0 0 512 512">
+				<g><path d="m337.034 420.796c.835.139 1.665.207 2.484.207 7.2 0 13.555-5.2 14.778-12.537l15-90c1.362-8.171-4.158-15.9-12.33-17.262-8.172-1.366-15.9 4.158-17.262 12.33l-15 90c-1.362 8.172 4.158 15.901 12.33 17.262z"/><path d="m158.704 408.466c1.223 7.337 7.577 12.537 14.778 12.537.819 0 1.649-.067 2.484-.207 8.172-1.362 13.692-9.09 12.33-17.262l-15-90c-1.362-8.172-9.089-13.691-17.262-12.33-8.172 1.362-13.692 9.09-12.33 17.262z"/><path d="m497 181h-52.791l-115.496-144.37c-5.174-6.467-14.613-7.518-21.083-2.342-6.469 5.175-7.518 14.614-2.342 21.083l100.503 125.629h-299.582l100.504-125.629c5.175-6.469 4.126-15.909-2.342-21.083-6.47-5.176-15.909-4.126-21.083 2.342l-115.497 144.37h-52.791c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15h18.686l56.892 199.121c1.839 6.44 7.725 10.879 14.422 10.879h302c6.697 0 12.583-4.439 14.423-10.879l56.891-199.121h18.686c8.284 0 15-6.716 15-15v-60c0-8.284-6.716-15-15-15zm-101.314 270h-279.372l-51.428-180h382.229zm86.314-210c-51.385 0-403.32 0-452 0v-30h452z"/><path d="m256 421c8.284 0 15-6.716 15-15v-90c0-8.284-6.716-15-15-15s-15 6.716-15 15v90c0 8.285 6.716 15 15 15z"/></g>
+			</symbol>
+		</svg>
+		<svg style="display: none;">
+			<symbol id='user' viewBox="0 0 512 512">
+				<g>
+					<path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148
+					C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962
+					c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216
+					h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40
+					c59.551,0,108,48.448,108,108S315.551,256,256,256z"/>
+				</g>
+			</symbol>
+		</svg>
+		<svg style="display: none;">
+			<symbol id="facebook" viewBox="0 0 24 24">
+				<g>
+					<path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+				</g>
+			</symbol>
+		</svg>
+		<svg style="display: none;">
+			<symbol id="pinterest" viewBox="0 0 24 24">
+				<g>
+					<path d="m12.326 0c-6.579.001-10.076 4.216-10.076 8.812 0 2.131 1.191 4.79 3.098 5.633.544.245.472-.054.94-1.844.037-.149.018-.278-.102-.417-2.726-3.153-.532-9.635 5.751-9.635 9.093 0 7.394 12.582 1.582 12.582-1.498 0-2.614-1.176-2.261-2.631.428-1.733 1.266-3.596 1.266-4.845 0-3.148-4.69-2.681-4.69 1.49 0 1.289.456 2.159.456 2.159s-1.509 6.096-1.789 7.235c-.474 1.928.064 5.049.111 5.318.029.148.195.195.288.073.149-.195 1.973-2.797 2.484-4.678.186-.685.949-3.465.949-3.465.503.908 1.953 1.668 3.498 1.668 4.596 0 7.918-4.04 7.918-9.053-.016-4.806-4.129-8.402-9.423-8.402z"/>
+				</g>
+			</symbol>
+		</svg>
+		<svg style="display: none;">
+			<symbol id="instagram" viewBox="0 0 511 511.9">
+				<g>
+					<path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/>
+				</g>
+			</symbol>
+		</svg>
+	</div>
+
+	<!-- Intro -->
+	<div id="intro" class="intro">
+		<div class="container">
+
+			<div class="intro__inner">
+				<header class="header">
+					<nav class="header__nav">
+						<a href="#" class="nav__link" data-scroll="#intro">Home</a>
+						<a href="#" class="nav__link" data-scroll="#shop">Shop</a>
+						<a href="#" class="nav__link" data-scroll="#story">Story</a>
+						<a href="#" class="nav__link" data-scroll="#abou">About</a>
+						<a href="#" class="nav__link" data-scroll="#blog">Blog</a>
+						<a href="#" class="nav__link" data-scroll="#testimonials">Testimonials</a>
+					</nav
+					>
+					<button class="header__menu" type="button" id="navToggle">
+						<div class="menu__item"></div>
+						<div class="menu__item"></div>
+						<div class="menu__item"></div>
+					</button>
+
+					<div class="site__title">
+						<span class="organic">Organic</span>
+						<span class="fresh__foods">fresh foods</span>
+					</div>
+
+					<div class="instruments">
+						<div class="instruments__wrap">
+							<a class="item" href="#"><svg class="favicon search"><use xlink:href="#search"></use></svg></a>
+							<a class="instruments__basket item" href="#"><div class="basket__count">0</div><svg class="favicon basket"><use xlink:href="#basket"></use></svg></a>
+							<a class="item" href="#"><svg class="favicon user"><use xlink:href="#user"></use></svg></a>
+							<div class="dash item"></div>
+						</div>
+						
+						<a class="instruments__favicon" href="#"><svg class="favicon facebook"><use xlink:href="#facebook"></use></svg></a>
+						<a class="instruments__favicon" href="#"><svg class="favicon pinterest"><use xlink:href="#pinterest"></use></svg></a>
+						<a class="instruments__favicon" href="#"><svg class="favicon instagram"><use xlink:href="#instagram"></use></svg></a>
+					</div>
+
+					<div class="instruments__mobile">
+						<span class="instruments__summ">0.0$</span>
+						<a class="instruments__basket item" href="#"><div class="basket__count">0</div><svg class="favicon basket"><use xlink:href="#basket"></use></svg></a>
+					</div>
+				</header>
+				<div class="shop__now__btn">
+					<a href="#" class="btn btn--green">Shop now</a>
+				</div>
+				<div class="smoothies__images" >
+					<img class="smoothies__img" src="images/smoothies/intro.png">
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- About -->
+	<section id="about" class="smoothies__desc">
+		<div class="container">
+
+			<div class="smoothies__desc__inner">
+				<h1 class="smoothies__title">What are these smothies?</h1>
+				<div class="smoothies__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+				<div class="smoothies__desc__img --uppers">
+					<img src="http://placehold.it/235x160/" alt="">
+					<img src="http://placehold.it/235x160/" alt="">
+					<img src="http://placehold.it/235x160/" alt="">
+					<img src="http://placehold.it/235x160/" alt="">
+				</div>
+				<div class="smoothies__desc__img --lowers">
+					<img src="http://placehold.it/235x160/" alt="">
+					<img src="http://placehold.it/235x160/" alt="">
+					<img src="http://placehold.it/235x160/" alt="">
+					<img src="http://placehold.it/235x160/" alt="">
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	
+	<!-- Shop -->
+	<section id="shop" class="smoothies__buy">
+		<div class="container">
+
+			<div class="smoothies__buy__top">
+				<div class="smoothies__buy__img">
+					<img src="images/smoothies/summer.jpg" alt="">
+				</div>
+				<div class="smoothies__buy__desc">
+					<h1 class="smoothies__title__buy">What makes Smoothies an <span class="awesome">awesome drink?</span></h1>
+					<nav class="smoothies__nav__buy">
+						<li><b>Crunchy</b> Puffs Texture</li>
+						<li><b>100 calories</b> per drink</li>
+						<li>4g plant protein</li>
+						<li>Good source of <b>magnesium & vitamin B6</b></li>
+						<li><b>No sugar</b> in our savory flavors</li>
+						<li><b>Non-GMO, vegan & paleo</b></li>
+						<li><b>Gluten-free & grain-free</b></li>
+						<li><b>Corn-free & soy free</b></li>
+					</nav>
+					<div class="about__organic__btn">
+						<a href="#" class="btn btn--rifle-green">About organic smoothies</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="smoothies__buy__inner__bottom">
+				<div class="smoothie__item item--rifle-red">
+					<div class="smoothie__item__img">
+						<img src="images/smoothies/smoothie-1.png" alt="">
+					</div>
+					<h4 class="smoothie__name">Dark chocolate smoothie</h4>
+					<div class="smoothie__volume">100 ml</div>
+					<a data-id="0" data-name="dark-chocolate-smoothie" data-price="5" href="#" class="btn btn-buy">Buy</a>
+					<div class="buy-indicator">
+						<button data-id="123" class="increase">+</button>
+						<div>1</div>
+						<button data-id="123" class="reduce">-</button>
+					</div>
+				</div>
+
+				<div class="smoothie__item item--rifle-green">
+					<div class="smoothie__item__img">
+						<img src="images/smoothies/smoothie-2.png" alt="">
+					</div>
+					<h4 class="smoothie__name">Vegan lettuce smoothie</h4>
+					<div class="smoothie__volume">100 ml</div>
+					<a data-id="1" data-name="vegan-lettuce-smoothie" data-price="5" href="#" class="btn btn-buy">Buy</a>
+				</div>
+
+				<div class="smoothie__item item--yellow">
+					<div class="smoothie__item__img">
+						<img src="images/smoothies/smoothie-3.png" alt="">
+					</div>
+					<h4 class="smoothie__name">Lemon ginger smoothie</h4>
+					<div class="smoothie__volume">100 ml</div>
+					<a data-id="2" data-name="lemon-ginger-smoothie" data-price="5" href="#" class="btn btn-buy">Buy</a>
+				</div>
+
+				<div class="smoothie__item item--red">
+					<div class="smoothie__item__img">
+						<img src="images/smoothies/smoothie-4.png" alt="">
+					</div>
+					<h4 class="smoothie__name">Turmeric garlic smoothie</h4>
+					<div class="smoothie__volume">100 ml</div>
+					<a data-id="3" data-name="turmeric-garlic-smoothie" data-price="5" href="#" class="btn btn-buy">Buy</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Story -->
+	<section id="story" class="story">
+		<div class="container">
+
+			<div class="story__inner">
+				<div class="story__wrap">
+					<h4 class="story__title">Our story</h4>
+					<div class="story__text">As products typically using raw fruits or vegetables, smoothies include dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, ofter with a consistency similar to a milkshake</div>
+					<div class="story__btn">
+						<a href="#" class="btn btn--green">Who we are</a>
+					</div>
+					
+				</div>
+				<div>
+					<img src="images/smoothies/smoothie-story.jpg" alt="">
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+	<!-- Testimonials  -->
+	<section id="testimonials" class="testimonials">
+		<div class="container">
+			<div class="testimonials__inner">
+				
+				<h1 class="testimonials__title">Why clients <span class="love">love</span> us?</h1>
+				<div class="testimonials__review">
+					<span class="testimonials__name">Sarah A</span>
+					<div class="testimonials__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."<p class="testiomials__city">-from Santa Monica, CA</p></div>
+					<img class="testimonials__img" src="images/clients/client-1.png">
+				</div>
+				<div class="arrows">
+
+					<div class="arrow--left">
+						<div></div>
+					</div>
+					<div class="arrow--right">
+						<div></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Blog -->
+	<section id="blog" class="blog">
+		<div class="container">
+			<div class="blog__inner">
+
+				<div class="blog__wrap">
+					<h1 class="blog__title">Our blog</h1>
+					<div class="blog_desc">
+						<img src="images/smoothies/smoothie-blog.jpg" alt="">
+						<div class="desc">
+							<h3 class="desc__title">asafoetida - the next turmeric?</h3>
+							<time datetime="2020-06-16T09:54" class="desc__date">Jun 16, 2020</time>
+							<div class="desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... <span class="read_more">Read More</span></div>	
+						</div>
+
+					</div>
+					<a class="blog__superfood" href="#"><svg class="favicon instagram"><use xlink:href="#instagram"></use></svg><span class="blog__superfood__span">superfood</span></a>
+				</div>	
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Smoothies photos -->
+	<div class="photos">
+		<div class="container">
+
+			<div class="photos__inner">
+				<div class="photos__item"><a class="photos__fav" href="#"><svg class="favicon instagram"><use xlink:href="#instagram"></use></svg></a><img src="images/smoothies/photo-1.png" alt=""></div>
+				<div class="photos__item"><a class="photos__fav" href="#"><svg class="favicon instagram"><use xlink:href="#instagram"></use></svg></a><img src="images/smoothies/photo-2.jpg" alt=""></div>
+				<div class="photos__item"><a class="photos__fav" href="#"><svg class="favicon instagram"><use xlink:href="#instagram"></use></svg></a><img src="images/smoothies/photo-3.jpg" alt=""></div>
+				<div class="photos__item"><a class="photos__fav" href="#"><svg class="favicon instagram"><use xlink:href="#instagram"></use></svg></a><img src="images/smoothies/photo-4.jpg" alt=""></div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__name">
+					<h1>Organic</h1>
+					<p>fresh foods</p>
+				</div>
+				<div class="footer__information">
+					<h5 class="information__title">Information</h5>
+					<nav class="information__nav">
+						<li>Search</li>
+						<li>Contact us</li>
+						<li>Terms & Conditions</li>
+						<li>Privacy Policy</li>
+					</nav>
+				</div>
+				<div class="footer__payment">
+					<h5 class="paymnent__title">Payment</h5>
+					<img src="images/payment.jpg" alt="">
+				</div>
+				<div class="footer__subscribe">
+					<h5 class="subscribe__title">Don`t miss out!</h5>
+					<div class="subscribe_btn">
+						<a href="#" class="btn btn--white">Subscribe to our newsletter</a>
+					</div>
+					<div class="footer__follow">
+						<span class="follow">Follow us</span>
+						<a class="follow__fav" href="#"><svg class="favicon facebook"><use xlink:href="#facebook"></use></svg></a>
+						<a class="follow__fav" href="#"><svg class="favicon pinterest"><use xlink:href="#pinterest"></use></svg></a>
+						<a class="follow__fav" href="#"><svg class="favicon instagram"><use xlink:href="#instagram"></use></svg></a>
+					</div>
+				</div>	
+			</div>
+			<div class="footer__rights">
+				<span class="rights__text">© 2020.All rights reserved</span>
+				<span data-scroll="#intro" class="go_top">Go top</span>
+				<div data-scroll="#intro" class="rights__arrow">
+					<div class="arrow--top">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="app.js" type="text/javascript"></script>
+
+</body>
+</html>
